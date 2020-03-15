@@ -8,7 +8,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-
 <body>
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -39,37 +38,39 @@
                     <th scope="row">1</th>
                     <td>970</td>
                     <td>
-                        <btn class="btn btn-primary">SHOW</btn>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showModal">
+                            Show Order Details
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="showModal" tabindex="-1" role="dialog"
+                            aria-labelledby="showModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="showModalLabel" style="color: black;">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="color: black;">ORDER FULL FUCKING DETAILS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td>17:30</td>
                     <td>
                         <button class="btn btn-primary mr-3">DONE</button>
                     </td>
                 </tr>
-                <th scope="row">2</th>
-                <td>971</td>
-                <td>
-                    <btn class="btn btn-primary">SHOW</btn>
-                </td>
-                <td>19:00</td>
-                <td>
-                    <button class="btn btn-primary mr-3">DONE</button>
-                </td>
-                </tr>
-                <th scope="row">3</th>
-                <td>972</td>
-                <td>
-                    <btn class="btn btn-primary">SHOW</btn>
-                </td>
-                <td>21:00</td>
-                <td>
-                    <button class="btn btn-primary mr-3">DONE</button>
-                </td>
-                </tr>
             </tbody>
         </table>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
