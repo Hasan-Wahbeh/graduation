@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manager Dashboard | Pending Orders</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mng_styling.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cf9f48730.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark nav-link disabled" href="#" aria-disabled="true">Welcome, MANAGER_NAME!</a>
+        </nav>
+    </div>
+
+    <div id="brd-cmb">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Dashboard - Pending Orders</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section id="main">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="manager_dashboard.html" class="list-group-item list-group-item-action"><i
+                            class="fas fa-cog"></i> Dashboard/a>
+                    <a href="mng_orders.html" class="list-group-item list-group-item-action active"><i
+                            class="fas fa-shopping-cart"></i>
+                        Orders</a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-percent"></i> Offers</a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Clients</a>
+                </div>
+
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-body">
+                        <h4>Products In Inventory</h4>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67"
+                                aria-valuemin="0" aria-valuemax="100">65%</div>
+                        </div>
+                        <h4 style="margin-top: 8px;">Offers Popularity</h4>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 24%;" aria-valuenow="24"
+                                aria-valuemin="0" aria-valuemax="100">24%</div>
+                        </div>
+                        <h4 style="margin-top: 8px;">Aborted Orders</h4>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" style="width: 13%;" aria-valuenow="13"
+                                aria-valuemin="0" aria-valuemax="100">13%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Pending Orders</h3>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Order Details</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Bagger</th>
+                                        <th scope="col">Cashier</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark Otto</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#showModal">
+                                                SHOW
+                                            </button>
+                    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="showModal" tabindex="-1" role="dialog"
+                                                aria-labelledby="showModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="showModalLabel" style="color: black;">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p style="color: black;">ORDER FULL FUCKING DETAILS</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>STATUS</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary btn-sm dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    SELECT
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <p class="dropdown-item">BAGGER #1</p>
+                                                    <p class="dropdown-item">BAGGER #2</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary btn-sm dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    SELECT
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <p class="dropdown-item">CASHIER #1</p>
+                                                    <p class="dropdown-item">CASHIER #2</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" style="margin-right: 8px;">APPROVE</button>
+                                            <button class="btn btn-danger btn-sm">ABORT</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

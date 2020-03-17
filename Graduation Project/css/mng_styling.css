@@ -1,0 +1,14 @@
+#brd-cmb{
+    width: 90% !important;
+    margin: auto;
+}
+
+.breadcrumb-item{
+    color: black !important;
+    font-size: 24px;
+}
+
+#main{
+    width: 90% !important;
+    margin: auto;
+}
